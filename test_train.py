@@ -5,7 +5,6 @@ import numpy as np
 import os
 import random
 from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import  StratifiedShuffleSplit
 my_model=load_model('model3_many.h5')
 def read_and_process_image(data_dir, width=64, height=64, channels=3, preprocess=False):
     train_images = [data_dir + i for i in os.listdir(data_dir) ]#if i != '.DS_Store'#将所有的要训练的问图片的名称读取到train_images的列表中

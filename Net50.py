@@ -61,7 +61,6 @@ def read_and_process_image(data_dir, width=64, height=64, channels=3, preprocess
     print("Train shape: {}".format(X.shape))
 
     return X, labels, label_encoder
-
 WIDTH = 64
 HEIGHT = 64
 CHANNELS = 3
